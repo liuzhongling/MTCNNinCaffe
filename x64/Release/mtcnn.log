@@ -1,0 +1,84 @@
+﻿生成启动时间为 2018/12/27 17:49:00。
+     1>项目“D:\Project\caffe\windows\mtcnn\mtcnn.vcxproj”在节点 3 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\Project\NugetPackages\lmdb-v120-clean.0.9.14.0\build\native\..\..\lib\native\include" /I"D:\Project\NugetPackages\LevelDB-vc120.1.2.0.0\build\native\../..//build/native/include/" /I"D:\Project\NugetPackages\protobuf-v120.2.6.1\build\native\../..//build/native/include/" /ID:\Project\NugetPackages\boost.1.59.0.0\build\native\..\..\lib\native\include\ /ID:\Project\NugetPackages\gflags.2.1.2.1\build\native\../..///build/native/include/ /I"D:\Project\NugetPackages\hdf5-v120-complete.1.8.15.2\build\native\..\..\lib\native\include" /ID:\Project\NugetPackages\glog.0.3.3.0\build\native\../..//build/native/include/ /ID:\Project\NugetPackages\OpenBLAS.0.2.14.1\build\native\..\..\lib\native\include /ID:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/include/ /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D HAS_LMDB /D HAS_HDF5 /D HAS_OPENBLAS /D HAS_OPENCV /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt mtcnn.cpp MTCNNtest.cpp
+         mtcnn.cpp
+     1>D:\Project\NugetPackages\glog.0.3.3.0\build\native\include\glog/logging.h(1158): warning C4251: “google::LogMessage::LogStream::streambuf_”: class“google::base_logging::LogStreamBuf”需要有 dll 接口由 class“google::LogMessage::LogStream”的客户端使用
+                 D:\Project\NugetPackages\glog.0.3.3.0\build\native\include\glog/logging.h(1088) : 参见“google::base_logging::LogStreamBuf”的声明
+     1>D:\Project\caffe\include\caffe/util/io.hpp(53): warning C4244: “参数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(78): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+     1>mtcnn.cpp(79): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+     1>mtcnn.cpp(81): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>mtcnn.cpp(82): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>mtcnn.cpp(83): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>mtcnn.cpp(84): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>mtcnn.cpp(130): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(131): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(147): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+     1>mtcnn.cpp(148): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+     1>mtcnn.cpp(149): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+     1>mtcnn.cpp(150): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+     1>mtcnn.cpp(220): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(233): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(234): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(235): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(236): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(238): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(239): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(299): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(309): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(310): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(311): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(312): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(314): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(315): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(424): warning C4244: “*=”: 从“double”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(429): warning C4244: “*=”: 从“double”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(438): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(439): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(466): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>mtcnn.cpp(471): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(473): warning C4305: “参数”: 从“double”到“float”截断
+     1>mtcnn.cpp(486): warning C4305: “参数”: 从“double”到“float”截断
+     1>mtcnn.cpp(493): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+     1>mtcnn.cpp(501): warning C4305: “参数”: 从“double”到“float”截断
+     1>D:\Project\caffe\include\caffe/net.hpp(211): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+                 D:\Project\caffe\include\caffe/net.hpp(211): 编译类 模板 成员函数“int caffe::Net<float>::num_inputs(void) const”时
+                 mtcnn.cpp(176): 参见对正在编译的函数 模板 实例化“int caffe::Net<float>::num_inputs(void) const”的引用
+                 mtcnn.cpp(173): 参见对正在编译的类 模板 实例化“caffe::Net<float>”的引用
+     1>D:\Project\caffe\include\caffe/net.hpp(212): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+                 D:\Project\caffe\include\caffe/net.hpp(212): 编译类 模板 成员函数“int caffe::Net<float>::num_outputs(void) const”时
+                 mtcnn.cpp(177): 参见对正在编译的函数 模板 实例化“int caffe::Net<float>::num_outputs(void) const”的引用
+     1>D:\Project\caffe\include\caffe/blob.hpp(74): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+                 D:\Project\caffe\include\caffe/blob.hpp(74): 编译类 模板 成员函数“int caffe::Blob<float>::num_axes(void) const”时
+                 D:\Project\caffe\include\caffe/blob.hpp(140): 参见对正在编译的函数 模板 实例化“int caffe::Blob<float>::num_axes(void) const”的引用
+                 mtcnn.cpp(136): 参见对正在编译的类 模板 实例化“caffe::Blob<float>”的引用
+         MTCNNtest.cpp
+     1>D:\Project\NugetPackages\glog.0.3.3.0\build\native\include\glog/logging.h(1158): warning C4251: “google::LogMessage::LogStream::streambuf_”: class“google::base_logging::LogStreamBuf”需要有 dll 接口由 class“google::LogMessage::LogStream”的客户端使用
+                 D:\Project\NugetPackages\glog.0.3.3.0\build\native\include\glog/logging.h(1088) : 参见“google::base_logging::LogStreamBuf”的声明
+     1>D:\Project\caffe\include\caffe/util/io.hpp(53): warning C4244: “参数”: 从“uint64_t”转换到“int”，可能丢失数据
+     1>MTCNNtest.cpp(46): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>MTCNNtest.cpp(51): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Project\caffe\windows\x64\Release\mtcnn.exe" /NOLOGO /LIBPATH:"D:\Project\NugetPackages\boost_python2.7-vc120.1.59.0.0\build\native\..\..\lib\native\address-model-64\lib" /LIBPATH:"D:\Project\NugetPackages\boost_thread-vc120.1.59.0.0\build\native\..\..\lib\native\address-model-64\lib" /LIBPATH:"D:\Project\NugetPackages\boost_system-vc120.1.59.0.0\build\native\..\..\lib\native\address-model-64\lib" /LIBPATH:"D:\Project\NugetPackages\boost_filesystem-vc120.1.59.0.0\build\native\..\..\lib\native\address-model-64\lib" /LIBPATH:"D:\Project\NugetPackages\boost_date_time-vc120.1.59.0.0\build\native\..\..\lib\native\address-model-64\lib" /LIBPATH:"D:\Project\NugetPackages\boost_chrono-vc120.1.59.0.0\build\native\..\..\lib\native\address-model-64\lib" "D:\Project\NugetPackages\lmdb-v120-clean.0.9.14.0\build\native\..\..\lib\native\lib\x64\lmdb.lib" "D:\Project\NugetPackages\LevelDB-vc120.1.2.0.0\build\native\../..//build/native/lib/x64\v120\Release\LevelDb.lib" "D:\Project\NugetPackages\protobuf-v120.2.6.1\build\native\../..//build/native/lib/x64\v120\Release\libprotobuf.lib" D:\Project\NugetPackages\gflags.2.1.2.1\build\native\../../build/native/x64/v120/dynamic/Lib/gflags.lib "D:\Project\NugetPackages\hdf5-v120-complete.1.8.15.2\build\native\..\..\lib\native\lib\x64\hdf5.lib" "D:\Project\NugetPackages\hdf5-v120-complete.1.8.15.2\build\native\..\..\lib\native\lib\x64\hdf5_cpp.lib" "D:\Project\NugetPackages\hdf5-v120-complete.1.8.15.2\build\native\..\..\lib\native\lib\x64\hdf5_f90cstub.lib" "D:\Project\NugetPackages\hdf5-v120-complete.1.8.15.2\build\native\..\..\lib\native\lib\x64\hdf5_fortran.lib" "D:\Project\NugetPackages\hdf5-v120-complete.1.8.15.2\build\native\..\..\lib\native\lib\x64\hdf5_hl.lib" "D:\Project\NugetPackages\hdf5-v120-complete.1.8.15.2\build\native\..\..\lib\native\lib\x64\hdf5_hl_cpp.lib" "D:\Project\NugetPackages\hdf5-v120-complete.1.8.15.2\build\native\..\..\lib\native\lib\x64\hdf5_hl_f90cstub.lib" "D:\Project\NugetPackages\hdf5-v120-complete.1.8.15.2\build\native\..\..\lib\native\lib\x64\hdf5_hl_fortran.lib" "D:\Project\NugetPackages\hdf5-v120-complete.1.8.15.2\build\native\..\..\lib\native\lib\x64\hdf5_tools.lib" "D:\Project\NugetPackages\hdf5-v120-complete.1.8.15.2\build\native\..\..\lib\native\lib\x64\szip.lib" "D:\Project\NugetPackages\hdf5-v120-complete.1.8.15.2\build\native\..\..\lib\native\lib\x64\zlib.lib" D:\Project\NugetPackages\glog.0.3.3.0\build\native\../../build/native/lib/x64/v120/Release/dynamic/libglog.lib D:\Project\NugetPackages\OpenBLAS.0.2.14.1\build\native\..\..\lib\native\lib\x64\libopenblas.dll.a D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_videostab2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_video2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_ts2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_superres2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_stitching2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_photo2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_ocl2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_objdetect2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_nonfree2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_ml2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_legacy2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_imgproc2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_highgui2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_gpu2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_flann2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_features2d2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_core2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_contrib2410.lib D:\Project\NugetPackages\OpenCV.2.4.10\build\native\../../build/native/lib/x64/v120/Release/opencv_calib3d2410.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Project\caffe\windows\x64\Release\mtcnn.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Project\caffe\windows\x64\Release\mtcnn.lib" /MACHINE:X64 x64\Release\mtcnn.res
+         x64\Release\mtcnn.obj
+         x64\Release\MTCNNtest.obj
+     1>mtcnn.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl caffe::MemoryDataLayer<float>::set_batch_size(int)" (?set_batch_size@?$MemoryDataLayer@M@caffe@@QEAAXH@Z)
+     1>mtcnn.obj : error LNK2001: 无法解析的外部符号 "public: virtual __cdecl caffe::Datum::~Datum(void)" (??1Datum@caffe@@UEAA@XZ)
+     1>mtcnn.obj : error LNK2001: 无法解析的外部符号 "public: __cdecl caffe::Datum::Datum(void)" (??0Datum@caffe@@QEAA@XZ)
+     1>mtcnn.obj : error LNK2001: 无法解析的外部符号 "public: __cdecl caffe::Datum::Datum(class caffe::Datum const &)" (??0Datum@caffe@@QEAA@AEBV01@@Z)
+     1>mtcnn.obj : error LNK2001: 无法解析的外部符号 "public: static class caffe::Caffe & __cdecl caffe::Caffe::Get(void)" (?Get@Caffe@caffe@@SAAEAV12@XZ)
+     1>mtcnn.obj : error LNK2001: 无法解析的外部符号 "public: float * __cdecl caffe::Blob<float>::mutable_cpu_data(void)" (?mutable_cpu_data@?$Blob@M@caffe@@QEAAPEAMXZ)
+     1>mtcnn.obj : error LNK2001: 无法解析的外部符号 "public: float const * __cdecl caffe::Blob<float>::cpu_data(void)const " (?cpu_data@?$Blob@M@caffe@@QEBAPEBMXZ)
+     1>mtcnn.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl caffe::Blob<float>::Reshape(int,int,int,int)" (?Reshape@?$Blob@M@caffe@@QEAAXHHHH@Z)
+     1>mtcnn.obj : error LNK2001: 无法解析的外部符号 "public: class boost::shared_ptr<class caffe::Blob<float> > const __cdecl caffe::Net<float>::blob_by_name(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)const " (?blob_by_name@?$Net@M@caffe@@QEBA?BV?$shared_ptr@V?$Blob@M@caffe@@@boost@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+     1>mtcnn.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl caffe::Net<float>::CopyTrainedLayersFrom(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?CopyTrainedLayersFrom@?$Net@M@caffe@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+     1>mtcnn.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl caffe::Net<float>::Reshape(void)" (?Reshape@?$Net@M@caffe@@QEAAXXZ)
+     1>mtcnn.obj : error LNK2001: 无法解析的外部符号 "public: class std::vector<class caffe::Blob<float> *,class std::allocator<class caffe::Blob<float> *> > const & __cdecl caffe::Net<float>::Forward(float *)" (?Forward@?$Net@M@caffe@@QEAAAEBV?$vector@PEAV?$Blob@M@caffe@@V?$allocator@PEAV?$Blob@M@caffe@@@std@@@std@@PEAM@Z)
+     1>mtcnn.obj : error LNK2001: 无法解析的外部符号 "public: __cdecl caffe::Net<float>::Net<float>(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,enum caffe::Phase,int,class std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > const *,class caffe::Net<float> const *)" (??0?$Net@M@caffe@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4Phase@1@HPEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@3@PEBV01@@Z)
+     1>D:\Project\caffe\windows\x64\Release\mtcnn.exe : fatal error LNK1120: 13 个无法解析的外部命令
+     1>已完成生成项目“D:\Project\caffe\windows\mtcnn\mtcnn.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:10.47
