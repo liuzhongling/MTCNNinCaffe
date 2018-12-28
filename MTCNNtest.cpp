@@ -11,6 +11,7 @@
 // boost
 #include "boost/make_shared.hpp"
 #include "mtcnn.h"
+#include "caffe_reg.h"
 
 using namespace caffe;
 
@@ -26,12 +27,13 @@ int main(int argc, char **argv)
 	int minSize = 40;
 	std::string proto_model_dir = argv[1];
 	MTCNN detector(proto_model_dir);
-
+	std::cout << "MTCNN initialized" << std::endl;
 	std::string imageName = argv[2];
 	cv::Mat image = cv::imread(imageName);
 	std::vector<FaceInfo> faceInfo;
 	clock_t t1 = clock();
 	std::cout << "Detect " << image.rows << "X" << image.cols;
+	std::cout << "MTCNN detect begin" << std::endl;
 	detector.Detect(image, faceInfo, minSize, threshold, factor);
 #ifdef CPU_ONLY
 	std::cout << " Time Using CPU: " << (clock() - t1)*1.0 / 1000 << std::endl;
@@ -51,6 +53,7 @@ int main(int argc, char **argv)
 			cv::circle(image, cv::Point(facePts.y[j], facePts.x[j]), 1, cv::Scalar(255, 255, 0), 2);
 	}
 	cv::imshow("a", image);
+	cv::imwrite("res.jpg", image);
 	cv::waitKey(0);
 
 	return 1;

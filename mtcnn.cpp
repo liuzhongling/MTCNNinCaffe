@@ -260,9 +260,9 @@ void MTCNN::ClassifyFace(const std::vector<FaceInfo>& regressed_rects, cv::Mat &
 
 		const float* confidence_data = confidence->cpu_data() + confidence->count() / 2;
 		const float* reg_data = reg->cpu_data();
-		const float* points_data;
+		const float* points_data = NULL;
 		if (netName == 'o') points_data = points_offset->cpu_data();
-
+		// points_data = points_offset->cpu_data();
 		if (*(confidence_data) > thresh){
 			FaceRect faceRect;
 			faceRect.x1 = regressed_rects[i].bbox.x1;
@@ -347,8 +347,9 @@ void MTCNN::ClassifyFace_MulImage(const std::vector<FaceInfo>& regressed_rects, 
 
 	const float* confidence_data = confidence->cpu_data();
 	const float* reg_data = reg->cpu_data();
-	const float* points_data;
+	const float* points_data = NULL;
 	if (netName == 'o') points_data = points_offset->cpu_data();
+	// points_data = points_offset->cpu_data();
 
 	for (int i = 0; i<numBox; i++){
 		if (*(confidence_data + i * 2 + 1) > thresh){
@@ -457,6 +458,7 @@ void MTCNN::Detect(const cv::Mat& image, std::vector<FaceInfo>& faceInfo, int mi
 		// check data transform right
 		CHECK(reinterpret_cast<float*>(input_channels.at(0).data) == PNet_->input_blobs()[0]->cpu_data())
 			<< "Input channels are not wrapping the input layer of the network.";
+		std::cout << "First stage PNet" << std::endl;
 		PNet_->Forward();
 
 		// return result
@@ -478,6 +480,7 @@ void MTCNN::Detect(const cv::Mat& image, std::vector<FaceInfo>& faceInfo, int mi
 		Padding(width, height);
 
 		/// Second stage
+		std::cout << "Second stage RNet" << std::endl;
 #ifdef CPU_ONLY
 		ClassifyFace(regressed_rects_, sample_single, RNet_, threshold[1], 'r');
 #else
@@ -488,7 +491,7 @@ void MTCNN::Detect(const cv::Mat& image, std::vector<FaceInfo>& faceInfo, int mi
 
 		Bbox2Square(regressed_rects_);
 		Padding(width, height);
-
+		std::cout << "Third stage RNet" << std::endl;
 		/// three stage
 		numBox = regressed_rects_.size();
 		if (numBox != 0){
