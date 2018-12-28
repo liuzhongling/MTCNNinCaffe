@@ -3,6 +3,8 @@
 - mainly refer to https://github.com/DaFuCoding/MTCNN_Caffe
 
 - further (train code) improve to be continued
+### 测试结果
+   run test.sh (先编译生成mtcnn.exe)
 
 ### 检测结果
 
