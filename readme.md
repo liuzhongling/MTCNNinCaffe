@@ -2,7 +2,7 @@
 
 - mainly refer to https://github.com/DaFuCoding/MTCNN_Caffe
 
-- further (train code) improve will be continued
+- further (train code) improve 
 
 ### 检测结果
 
